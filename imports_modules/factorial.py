@@ -4,4 +4,4 @@ def fact(num):
         res=res*i
         print(res)
 
-fact(2)
+fact(5)
