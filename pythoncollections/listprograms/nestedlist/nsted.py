@@ -4,9 +4,12 @@ employees=[
     [102,"pratheesh","qc","30000",1989,1991],
     [103,"abi","ba","20000",1990,1999],
 ]
-total=0
-sallist=[]
+#total=0
+#sallist=[]
+exp=[]
+
 for emp in employees:
+
     #print(emp[1])
 
     #print(emp[3])
@@ -15,10 +18,17 @@ for emp in employees:
         #print(emp)
 
     #salary=int(emp[3])
-    #total=total+salary
+#total=total+salary
 #print(total)
 
     #sallist.append(int(emp[3]))
-#print(max(sallist))
+        #print(max(sallist))
 
+   exp.append(emp[5]-emp[4])
+print(max(exp))
+high=max(exp)
 
+for emp in employees:
+    exp=emp[5]-emp[4]
+    if(high==exp):
+        print(emp)
