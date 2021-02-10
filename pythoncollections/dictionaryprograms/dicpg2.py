@@ -1,4 +1,4 @@
-text="hello hai hello hai"
+text="hello hai hello hai how are"
 words=text.split(" ")
 dict={}
 for word in words:
@@ -7,3 +7,5 @@ for word in words:
     else:
         dict[word]+=1
 print(dict)
+data=sorted(dict,key=dict.get,reverse=True)
+print(data)
