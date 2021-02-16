@@ -5,13 +5,17 @@ students={
     1003:{"id":1003,"name":"nikhil","course":"django","qualification":"btech"},
     1004:{"id":1004,"name":"gokul","course":"django","qualification":"mca"},
 }
-id=int(input("enter student id"))
-property=input("enter student property")
-if id in students:
-    print(students[id]["name"])
-    if property in students[id]:
-        print(students[id][property])
+
+def get_students(**kwargs):
+    id=kwargs("id")
+    prop=kwargs("property")
+    if id in students:
+        print(students[id]["name"])
+    if prop in students[id]:
+        print(students[id]["prperty"])
     else:
-        print("invalid property")
-else:
-    print("invalid")
+        print("invalid")
+    else:
+        print("doesnot exist")
+
+get_students(id=1000,prop="course")
