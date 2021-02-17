@@ -15,7 +15,6 @@ def get_students(**kwargs):
         print(students[id]["prperty"])
     else:
         print("invalid")
-    else:
+        else:
         print("doesnot exist")
-
 get_students(id=1000,prop="course")
