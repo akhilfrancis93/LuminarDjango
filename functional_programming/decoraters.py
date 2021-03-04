@@ -9,4 +9,4 @@ def sub_smart(fun):
 def sub(num1,num2):
 
     return num1-num2
-print(sub(10,20))
+print(10,20)

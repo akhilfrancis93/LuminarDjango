@@ -6,7 +6,7 @@ for i in range(0,len(lst)):
     if (sum==inp):
         print("pairs",lst[low],lst[upp])
         low+=1
-    elif (sum<inp):
+    elif (sum<=inp):
         low+=1
     else:
         upp-=1
